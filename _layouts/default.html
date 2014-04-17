@@ -7,38 +7,39 @@
         <meta name="viewport" content="width=device-width">
 
         <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/assets/css/syntax.css">
+        <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="stylesheet" href="/css/screen.css">
 
     </head>
     <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Frankie Ramirez<br />
-                Sofware Engineer<br />
-                frankiedevs@gmail.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/frankieramirez">github.com/frankieramirez</a><br />
-                <a href="https://twitter.com/frankiedevs">twitter.com/frankiedevs</a><br />
-              </p>
-            </div>
-          </div>
+        <div class="grid">
+            <main class="grid__item lap-three-fourths">
+                <div class="grid">
+                      <section class="grid__item lap-one-third">
+                          <div class="info__block">
+                            <h1>Who I Am</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porttitor, elit eu convallis convallis, neque ante iaculis tellus, et aliquet odio mi quis lectus. Cras diam augue, ultrices vulputate quam quis, pharetra condimentum felis. Nunc sed quam elementum, hendrerit lectus ac, vestibulum libero. Nullam nibh dolor, tincidunt sed urna et, euismod iaculis nunc. Duis euismod augue in malesuada euismod. Mauris commodo libero magna, at dictum massa varius in. Donec sit amet vestibulum turpis, mollis lacinia ligula. Mauris molestie iaculis porttitor. Quisque placerat leo ac pharetra ornare. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin tincidunt mollis bibendum. Aenean erat tellus, adipiscing ut tellus ac, sagittis molestie purus.</p>
+                          </div>
+                      </section>
+                      <section class="grid__item lap-one-third">
+                          <div class="info__block">
+                            <h1>What I do</h1>
+                            <p>Nunc vestibulum quam risus, at iaculis massa tincidunt at. Proin rhoncus malesuada eros quis sodales. Vestibulum ligula diam, tincidunt eu vehicula non, venenatis ac turpis. In quam elit, dapibus id lacinia tincidunt, congue et nunc. Sed velit quam, tristique id mi ac, commodo commodo augue. Nulla sodales, purus sit amet luctus aliquet, est lacus sagittis ligula, at placerat sem felis ac nisl. Phasellus gravida gravida dui et auctor. Donec eros nulla, convallis non accumsan at, tempor volutpat tortor. Vivamus faucibus in diam quis porta. Quisque gravida, massa at gravida interdum, purus erat faucibus arcu, eget mollis metus lacus non magna. Ut blandit hendrerit malesuada. Fusce ultricies lacus vel nunc dapibus, in bibendum mi tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam faucibus vestibulum dui non porta. Aenean sodales metus magna, non posuere tellus dapibus at. Phasellus nulla tellus, lobortis vitae eros a, molestie consequat quam.</p>
+                          </div>
+                      </section>
+                      <section class="grid__item lap-one-third">
+                        <div class="info__block">
+                            <h1>Something Else</h1>
+                            <p>Nullam vehicula magna sit amet sagittis porta. Nam interdum tristique neque sed malesuada. Proin vitae justo vitae metus tristique iaculis sed eu elit. Nulla rhoncus fringilla varius. Sed eu suscipit dolor. Cras ut elit id magna varius eleifend. Sed bibendum sem risus, nec suscipit libero lobortis feugiat. Pellentesque porta lacus vel massa tincidunt commodo. Phasellus iaculis massa id rhoncus malesuada. Suspendisse velit est, bibendum vitae nisl eget, gravida posuere quam. Donec luctus fringilla sapien, ac hendrerit lacus mollis ut. Nam enim purus, lobortis sit amet varius quis, porttitor sit amet sapien. Aenean bibendum laoreet orci vitae varius.</p>
+                        </div>
+                      </section>
+                </div>
+            </main>
+            <aside class="grid__item lap-one-fourth">
+              {{ content }}
+            </aside>
         </div>
-
     </body>
 </html>
