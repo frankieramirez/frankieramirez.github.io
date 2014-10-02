@@ -1,9 +1,26 @@
 body
 	font-family: $source
 	background: #e1e1e1
-
 p
 	font-size: 19px
+
+h2
+	font-weight: normal
+
+.contain
+	max-width: 720px
+	margin: 0 auto
+
+.one-half
+	padding: 10px
+	box-sizing: border-box
+	@media screen and (min-width: $lap-start)
+		display: inline-block
+		width: 49.79%
+.one-third
+	@media screen and (min-width: $lap-start)
+		display: inline-block
+		width: 33%
 
 .button
 	display: inline-block
@@ -29,19 +46,29 @@ p
 .main-header__name
 	text-align: center
 	color: #f1f1f1
+	font-weight: lighter
 
 .story, .projects
 	padding: 20px
 	border-bottom: 4px solid #162955
+	@media screen and (min-width: $lap-start)
+		padding: 60px 20px
 .story__title, .projects__title
 	text-align: center
 .story__summary, .projects__summary
 	line-height: 1.6
+	text-align: center
+
+.project
+	background: #162955
+	height: 200px
 
 .career, .notes
 	background: #061539
 	padding: 20px
 	border-bottom: 4px solid #2F4475
+	@media screen and (min-width: $lap-start)
+		padding: 60px 20px
 .career__title, .notes__title
 	text-align: center
 	color: #f1f1f1
@@ -49,7 +76,18 @@ p
 	color: #f1f1f1
 	line-height: 1.6
 	font-weight: lighter
+	text-align: center
+.career__header
+	color: #7887AB
+	font-weight: normal
+	text-align: center
+
+.post
+	color: #e1e1e1
+.post__link
+	color: #4F628E
 
 .main-footer
 	padding: 20px
 	text-align: center
+	border-bottom: 4px solid #7887AB
